@@ -52,8 +52,9 @@ class _ChatScreenState extends State<ChatScreen> {
         leading: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Image.asset(AssetsManager.openaiLogo),
+          //
         ),
-        title: const Text("ChatGPT"),
+        title: const Text("Virtual Dost"),
         actions: [
           IconButton(
             onPressed: () async {
@@ -92,6 +93,7 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
             Material(
               color: cardColor,
+              // color: cardColor.withOpacity(0.9),
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
